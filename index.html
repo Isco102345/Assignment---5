@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!----------------Google Fonts------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!----------------Font Awesome----------------->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!---------------BootStrap----------------->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-----------------Style------------------------>
+    <link rel="stylesheet" href="./CSS/Style.css">
+    
+</head>
+
+<body class="games">
+
+    <section >
+
+        <div class="loading d-none" id="loading">
+            <span class="loader"></span>
+        </div>
+
+        <!------------------Start Header--------------------->
+        <header class="text-center mb-4">
+            <img class="w-100" src="./wraper.png" alt="game img">
+        </header>
+        <!------------------End Header--------------------->
+        <!------------------Start Nav--------------------->
+        <nav class="navbar navbar-expand-lg nav-bg position-sticky z-3 rounded-5 w-75 pt-0 pb-0">
+            <div class="container">
+                <h5 class="navbar-brand mb-0 text-uppercase text-white d-flex align-items-center">
+                    <img class="w-25 me-2" src="./logo-sm.png" alt="game logo">
+                    Game Reviews
+                </h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+                        <li class="nav-item" id="nav-item">
+                            <a class="nav-link active text-info" aria-current="page" href="#" data-category="mmorpg">Mmorpg</a>
+                        </li>
+                        <li class="nav-item" id="nav-item">
+                            <a class="nav-link text-white" href="#" data-category="shooter">Shooter</a>
+                        </li>
+                        <li class="nav-item" id="nav-item">
+                            <a class="nav-link text-white" href="#" data-category="sailing">Sailing</a>
+                        </li>
+                        <li class="nav-item" id="nav-item">
+                            <a class="nav-link text-white" href="#" data-category="permadeath">Permadeath</a>
+                        </li>
+                        <li class="nav-item" id="nav-item">
+                            <a class="nav-link text-white" href="#" data-category="superhero">Superhero</a>
+                        </li>
+                        <li class="nav-item" id="nav-item">
+                            <a class="nav-link text-white" href="#" data-category="pixel">Pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!------------------End Nav--------------------->
+
+        <!------------------Start Main--------------------->
+        <section class="position-relative card-main">
+            <div class="container my-5 mb-5">
+                <div class="row g-4" id="games-row">
+                    <!-- <div class="col-md-6 col-lg-3">
+                        <div class="card bg-transparent h-100">
+                            <div class="card-img-top img-container">
+                                <img src="./thumbnail.jpg" alt="Tarisland" class="img-fluid">
+                            </div>
+                            <div class="card-body text-center d-flex justify-content-between">
+                                <h6 class="fw-bold text-white">Tarisland</h6>
+                                <span class="badge-span ">Free</span>
+                            </div>
+                            <p class="card-text small text-center">
+                                A cross-
+                                platform MMORPG developed by Level Infinite and
+                            </p>
+                            <footer class="card-footer d-flex justify-content-between">
+                                <span class="badge badge-color">MMORPG</span>
+                                <span class="badge badge-color">PC (Windows)</span>
+                            </footer>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!------------------End Main--------------------->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Details Game</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="game-body">
+                        <div class="container">
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------Scribt-------------------->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./JS/Games.js"></script>
+    <script src="./JS/detils.js"></script> -->
+    <script type="module" src="./JS/index.js"></script>
+    <!---------------------Scribt-------------------->
+
+</body>
+
+</html>
