@@ -73,11 +73,17 @@ h5{
     color: #888A8D;
 }
 .card-main .card {
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
     cursor: pointer;
+    opacity: .6;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
 }
 .card-main .card:hover {
     transform: scale(1.05); 
+    opacity: 1;
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
